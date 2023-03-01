@@ -1,8 +1,8 @@
 import React from "react";
 import Login from "./Login/Login";
-import SideNavBar from "./sideNavBar/SideNavBar";
 import Signup from "./SignUp/SignUp";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Contacts_page from "./Contacts-Page/Contacts-Page";
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/"  element={<Login></Login>}/>
           <Route path="/signup"  element={<Signup></Signup>}/>
+          <Route path="/contactpage"  element={<Contacts_page></Contacts_page>}/>
          </Routes>
       </BrowserRouter>
 

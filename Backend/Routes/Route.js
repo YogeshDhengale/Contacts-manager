@@ -6,4 +6,5 @@ router.get('/', (req, res) => {
     res.send('Api working perfectly')
 })
 
+
 module.exports = router
