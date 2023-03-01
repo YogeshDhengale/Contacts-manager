@@ -1,8 +1,9 @@
+import SideNavBar from "../sideNavBar/SideNavBar"
+
 const Contacts_page = ()=>{
     return (
-
         <>
-        
+        <SideNavBar></SideNavBar>
         </>
     )
 
