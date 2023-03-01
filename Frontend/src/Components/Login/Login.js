@@ -25,7 +25,7 @@ const Login = () => {
             <input type="text" name="" id="" className="username" placeholder='Mail ID'/><br />
             <input type="password" name="" id="" className="password" placeholder='Password'/>
           </div>
-          <button className='signup-btn'>Signup</button>
+          <button className='signup-btn'>Sign In</button>
           <a href="/signup" className='signupLink'>Sign Up</a>
         </form>
     </div>
