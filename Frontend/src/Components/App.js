@@ -1,9 +1,11 @@
- 
+import React from "react";
+import SideNavBar from "./sideNavBar/SideNavBar";
+
 function App () {
   
   return (
-    <div>
-      Frontend is up
+    <div >
+     <SideNavBar></SideNavBar>
     </div>
   )
 }
