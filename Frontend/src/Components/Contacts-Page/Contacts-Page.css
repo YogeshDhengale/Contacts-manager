@@ -131,10 +131,12 @@ tbody tr:nth-child(even) {
 .pen {
     font-size: 18px;
     color: #0884FF;
+    cursor: pointer;
 }
 
 
 .del {
     font-size: 18px;
     color: red;
+    cursor: pointer;
 }
