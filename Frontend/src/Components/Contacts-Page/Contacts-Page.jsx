@@ -93,44 +93,35 @@ const Contacts_page = () => {
                             </tr>
                             <tr>
                                 <td> <input type="checkbox" /> Karthik</td>
-                                <td>Sanju</td>
-                                <td>Ashok Lyland</td>
-                                <td>Oil & Energy</td>
-                                <td>Abc123@gmail.com</td>
-                                <td>1234567890</td>
+                                <td>Owner</td>
+                                <td>Aurobindo Pharma</td>
+                                <td>Consumer Services</td>
+                                <td>Karthik34@gmail.com</td>
+                                <td>767422911</td>
+                                <td>Ind</td>
+                                <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" /> Sanju</td>
+                                <td>CEO</td>
+                                <td>Bajaj Finance</td>
+                                <td>Appreal Fashion</td>
+                                <td>Sanju@gmail.com</td>
+                                <td>7648356789</td>
                                 <td>India</td>
                                 <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
                             </tr>
                             <tr>
-                                <td> <input type="checkbox" /> Tejas Vardhan</td>
-                                <td>Director</td>
-                                <td>Ashok Lyland</td>
-                                <td>Oil & Energy</td>
-                                <td>Abc123@gmail.com</td>
-                                <td>1234567890</td>
-                                <td>India</td>
+                                <td> <input type="checkbox" /> Rakesh</td>
+                                <td>Founder</td>
+                                <td>Tata Motors</td>
+                                <td> Appreal Fashion</td>
+                                <td>rakeshram@gmail.com</td>
+                                <td>7434567890</td>
+                                <td>Ind</td>
                                 <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
                             </tr>
-                            <tr>
-                                <td> <input type="checkbox" /> Tejas Vardhan</td>
-                                <td>Director</td>
-                                <td>Ashok Lyland</td>
-                                <td>Oil & Energy</td>
-                                <td>Abc123@gmail.com</td>
-                                <td>1234567890</td>
-                                <td>India</td>
-                                <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
-                            </tr>
-                            <tr>
-                                <td> <input type="checkbox" /> Tejas Vardhan</td>
-                                <td>Director</td>
-                                <td>Ashok Lyland</td>
-                                <td>Oil & Energy</td>
-                                <td>Abc123@gmail.com</td>
-                                <td>1234567890</td>
-                                <td>India</td>
-                                <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
-                            </tr>
+                         
                            
                         </tbody>
                     </table>
