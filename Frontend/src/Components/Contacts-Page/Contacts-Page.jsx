@@ -52,7 +52,57 @@ const Contacts_page = () => {
                                 <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
                             </tr>
                             <tr>
-                                <td> <input type="checkbox" /> The Clash</td>
+                                <td> <input type="checkbox" />Ramesh</td>
+                                <td>Director</td>
+                                <td>Ashok Lyland</td>
+                                <td>Oil & Energy</td>
+                                <td>Abc123@gmail.com</td>
+                                <td>1234567890</td>
+                                <td>India</td>
+                                <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" /> Tejas Vardhan</td>
+                                <td>Director</td>
+                                <td>Ashok Lyland</td>
+                                <td>Oil & Energy</td>
+                                <td>Abc1234@gmail.com</td>
+                                <td>1234567890</td>
+                                <td>India</td>
+                                <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" /> Tejas Vardhan</td>
+                                <td>Director</td>
+                                <td>Ashok Lyland</td>
+                                <td>Oil & Energy</td>
+                                <td>Abc123@gmail.com</td>
+                                <td>1234567890</td>
+                                <td>India</td>
+                                <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" /> Raju</td>
+                                <td>owner</td>
+                                <td>Asian paints</td>
+                                <td>Consumers Service</td>
+                                <td>raju12@gmail.com</td>
+                                <td>764822811</td>
+                                <td>Aus</td>
+                                <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" /> Karthik</td>
+                                <td>Sanju</td>
+                                <td>Ashok Lyland</td>
+                                <td>Oil & Energy</td>
+                                <td>Abc123@gmail.com</td>
+                                <td>1234567890</td>
+                                <td>India</td>
+                                <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" /> Tejas Vardhan</td>
                                 <td>Director</td>
                                 <td>Ashok Lyland</td>
                                 <td>Oil & Energy</td>
@@ -71,6 +121,17 @@ const Contacts_page = () => {
                                 <td>India</td>
                                 <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
                             </tr>
+                            <tr>
+                                <td> <input type="checkbox" /> Tejas Vardhan</td>
+                                <td>Director</td>
+                                <td>Ashok Lyland</td>
+                                <td>Oil & Energy</td>
+                                <td>Abc123@gmail.com</td>
+                                <td>1234567890</td>
+                                <td>India</td>
+                                <td className="actionbtn"><a className="pen"><BsPencil></BsPencil></a> <a className="del"><RiDeleteBin6Line></RiDeleteBin6Line></a> </td>
+                            </tr>
+                           
                         </tbody>
                     </table>
 
