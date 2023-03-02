@@ -14,10 +14,10 @@ const SideNavBar = () => {
     <nav class="sidebar-nav">
       <ul>
         <li>
-          <a href="#"><i class="ion-bag"></i> <span><MdOutlineDashboard className='md'></MdOutlineDashboard> DashBoard</span></a>
+          <a href="#" className='dashboardTotalContacts'><i class="ion-bag"></i> <span><MdOutlineDashboard className='md'></MdOutlineDashboard> DashBoard</span></a>
         </li>
         <li>
-          <a href="#"><i class="ion-ios-settings"></i> <span class=""><MdOutlineContacts className='md'></MdOutlineContacts>Total Contacts</span></a>
+          <a href="#" className='dashboardTotalContacts'><i class="ion-ios-settings"></i> <span class=""><MdOutlineContacts className='md'></MdOutlineContacts>Total Contacts</span></a>
         </li>
       </ul>
     </nav>

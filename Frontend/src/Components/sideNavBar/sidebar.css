@@ -54,7 +54,7 @@ li {
     width: 100%;
 }
 
-a {
+.dashboardTotalContacts{
     font-family: 'Titillium Web';
     color: black;
     opacity: 0.9;
@@ -67,7 +67,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.dashboardTotalContacts:hover {
     font-family: 'Titillium Web';
     color: white;
     font-weight: 600;
