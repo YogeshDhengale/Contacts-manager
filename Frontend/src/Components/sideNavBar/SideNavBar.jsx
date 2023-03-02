@@ -9,7 +9,7 @@ const SideNavBar = () => {
     <section class="app">
   <aside class="sidebar">
          <header>
-        <img className='img' src={logo} alt="" />
+        <h1 className="img">LOGO</h1>
       </header>
     <nav class="sidebar-nav">
       <ul>
