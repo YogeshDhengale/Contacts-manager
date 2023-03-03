@@ -19,7 +19,7 @@ const Login = () => {
         <img src={dots} alt="" />
       </div>
       <div className="logo">LOGO</div>
-      <p className='para'>Enter your credentials to access your accout.</p>
+      <p className='para'>Enter your credentials to access your account.</p>
         <form action="" className="login-form">
           <div className="inputs">
             <input type="email" name="" id="" className="username" placeholder='Mail ID'/><br />

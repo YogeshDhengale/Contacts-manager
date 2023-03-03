@@ -3,9 +3,12 @@ const app = express()
 const router = require('./Routes/Route')   
 const conn = require('./Connection/conn') 
 require('dotenv').config()
+const bodyParser = require('body-parser')
 
 conn()
 
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json())
 app.use('/', router)
 
 app.listen(process.env.port, () => {

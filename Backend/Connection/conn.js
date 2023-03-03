@@ -1,18 +1,17 @@
-const MongoClient = require('mongodb').MongoClient;
+const MongoClient = require('mongodb').MongoClient
 
-const connectDB = () => {
-
+const connectDB = async () => {
     const uri = process.env.uri
-    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
-    client.connect(err => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log('Connected to MongoDB Atlas')
-        }
+    try {
+        await client.connect();
+        console.log('Connected to MongoDB Atlas')
         
-    })
+    } 
+    catch (err) {
+        console.log(err);
+    }
 }
 
 module.exports = connectDB

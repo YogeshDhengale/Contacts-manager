@@ -2,7 +2,6 @@ import React from 'react'
 import './navbar.css'
 import sample from '../../assets/sample.png'
 import Line from '../../assets/Line 1.png'
-import {AiOutlineSearch} from 'react-icons/ai'
 
 const Navbar = () => {
   return (
