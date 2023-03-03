@@ -4,7 +4,7 @@ import { BsFilter, BsPencil } from 'react-icons/bs'
 import { MdImportExport} from "react-icons/md"
 import { RiDeleteBin6Line } from 'react-icons/ri'
 import Navbar from "../navbar/navbar"
-import SideNavBar from "../sideNavBar/SideNavBar"
+import SideNavBar from "../SideNavBar/SideNavBar"
 import './Contacts-Page.css'
 
 const Contacts_page = () => {
