@@ -4,10 +4,14 @@ import { BsFilter, BsPencil } from 'react-icons/bs'
 import { MdImportExport} from "react-icons/md"
 import { RiDeleteBin6Line } from 'react-icons/ri'
 import Navbar from "../navbar/navbar"
-import SideNavBar from "../SideNavBar/SideNavBar"
+import SideNavBar from "../sideNavBar/SideNavBar"
 import './Contacts-Page.css'
+import DeleteScreen from "../Deleted-Screen/Deleted-Screen"
+import { useState } from "react"
 
 const Contacts_page = () => {
+    const [date, setDate]=useState('Select Date');
+    const [com, setCom]=useState(false)
     return (
         <>
             <SideNavBar></SideNavBar>
@@ -15,11 +19,16 @@ const Contacts_page = () => {
             <div className="contactTable">
                 <div className="buttons">
                 <div className="bttons-left">
-                    <button className="date">{<AiOutlineCalendar></AiOutlineCalendar>}Select Date <input type="date" /></button>
+                    <button className="date"><label htmlFor="date">{date}</label><input type="date" onChange={(e)=>{
+                            if(e.target.value){
+                                setDate(e.target.value)
+                            }else{
+                                setDate("Select Date")
+                            }}}/></button>
                     <button className="filter">{ <BsFilter></BsFilter>} Filter | </button>
                 </div>
                 <div className="bttons-right">
-                    <button className="delete">{<AiOutlineDelete></AiOutlineDelete>}Delete</button>
+                    <button className="delete" onClick={()=>{setCom(true)}}>{<AiOutlineDelete></AiOutlineDelete>}Delete</button>
                     <button className="import">{<MdImportExport></MdImportExport>}Import</button>
                     <button className="export">{<CiExport></CiExport>}Export</button>
                 </div>
@@ -128,7 +137,7 @@ const Contacts_page = () => {
 
                 </div>
             </div>
-
+                            {com && <DeleteScreen setCom={setCom}></DeleteScreen>}
         </>
     )
 

@@ -1,10 +1,8 @@
-const Import_Choose_File = () => {
+import React from 'react'
 
-    return (
-        <div>
-
-        </div>
-    )
+const ImportChooseFile = () => {
+  return (
+    <div></div>  )
 }
 
-export default Import_Choose_File
+export default ImportChooseFile; 

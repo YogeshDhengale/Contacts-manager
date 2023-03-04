@@ -1,5 +1,6 @@
 import React from 'react'
 import './sidebar.css'
+import {Link} from "react-router-dom"
 import {MdOutlineDashboard, MdOutlineContacts} from 'react-icons/md'
 import {FiLogOut} from 'react-icons/fi'
 import logo from "../../assets/Logo.png"
@@ -22,7 +23,7 @@ const SideNavBar = () => {
         </li>
       </ul>
       <div className='logout'>
-             <button className='logoutbtn'>{<FiLogOut></FiLogOut>} Log out</button>
+             <button className='logoutbtn'>{<FiLogOut></FiLogOut>} <Link to='/'>Logout</Link></button>
       </div>
     </nav>
   </aside>

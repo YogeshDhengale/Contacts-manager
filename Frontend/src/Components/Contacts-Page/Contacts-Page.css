@@ -22,6 +22,14 @@
     left: 1000px;
 }
 
+.date > input {
+    width: 18px;
+    height: 18px;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
 .bttons-right {
     display: flex;
     flex-direction: row;
@@ -138,5 +146,9 @@ tbody tr:nth-child(even) {
 .del {
     font-size: 18px;
     color: red;
+    cursor: pointer;
+}
+
+button{
     cursor: pointer;
 }

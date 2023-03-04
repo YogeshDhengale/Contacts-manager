@@ -99,7 +99,7 @@ bottom: 2.5%;
 border: none;
 outline: none;
 background: none;
-
+cursor: pointer;
 font-family: 'Titillium Web';
 /* font-style: normal; */
 font-weight: bolder;
