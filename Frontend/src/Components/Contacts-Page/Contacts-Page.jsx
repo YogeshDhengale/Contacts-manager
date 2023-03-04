@@ -1,10 +1,9 @@
-
-import { AiOutlineCalendar, AiOutlineDelete } from 'react-icons/ai';
+import {AiOutlineDelete } from 'react-icons/ai';
 import { CiExport } from 'react-icons/ci';
-import { BsFilter, BsPencil } from 'react-icons/bs';
+import { BsFilter} from 'react-icons/bs';
 import { MdImportExport } from 'react-icons/md';
 import Navbar from '../navbar/navbar';
-import SideNavBar from '../SideNavBar/SideNavBar';
+import SideNavBar from '../sideNavBar/SideNavBar';
 import './Contacts-Page.css';
 import Import_Choose_File from '../Import-Choose-File/Import-Choose-File';
 import DeleteScreen from "../Deleted-Screen/Deleted-Screen"
