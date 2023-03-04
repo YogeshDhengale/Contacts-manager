@@ -42,6 +42,8 @@ router.post('/signup', async (req, res) => {
         password: hashedPassword
     }
 
+    console.log(newUser)
+
     try {
         let data = await userCollection.insertOne(newUser)
         res.status(201).json({
@@ -150,7 +152,6 @@ router.get('/contacts', async (req, res) => {
 
 
 
-
 router.post('/contacts', upload.single('csv'), async (req, res) => {
     try {
         if (!req.file) {
@@ -167,9 +168,10 @@ router.post('/contacts', upload.single('csv'), async (req, res) => {
             .on('data', (data) => results.push(data))
 
             .on('end', async () => {
+               
                 const client = new MongoClient(process.env.uri)
                 const userCollection = client.db('Contacts-Manager').collection('Users')
-                
+
                 const decodedToken = jwt.verify(req.headers.authorization.split(' ')[1], process.env.JWT_SECRET)
                 const userEmail = decodedToken.email
                 const user = await userCollection.findOne({ email: userEmail })

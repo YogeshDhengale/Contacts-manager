@@ -139,7 +139,7 @@
 .signup-btn {
     width: 405px;
     position: absolute;
-    left: 37.50%;
+    left: 38.4%;
     right: 36.98%;
     top: 490px;
     height: 44px;
@@ -156,14 +156,13 @@
     position: absolute;
     width: 57px;
     height: 18px;
-    left: 48%;
-    top: 540px;
-
+    left: 49.9%;
+    top: 560px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
     line-height: 18px;
+    text-decoration: none;
 
     display: flex;
     align-items: center;
@@ -192,4 +191,13 @@
 .groupOfDots2 > img {
     width: 130px;
     height: 110px;
+}
+
+.message {
+    font-family: sans-serif ;
+    z-index: 2;
+    position: relative;
+    top: 16.5em;
+    left: 36em;
+    color: red;
 }
