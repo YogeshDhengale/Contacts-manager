@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {RiDeleteBinLine} from 'react-icons/ri'
+import DeleteConfirmScreen from '../Delete-Confirm-Screen/Delete-Confirm-Screen'
 import './Deleted-Screen.css'
 
 const DeleteScreen = ({setCom}) => {
+    const [ok, setOk]=useState(false)
+
   return (
     <>
     
@@ -14,11 +17,13 @@ const DeleteScreen = ({setCom}) => {
                 <h6 className='question'>Sure you want delete this Contacts ?</h6>
                 <div className="buttons">
                     <button className="cancel" onClick={() => setCom(false)}>Cancel</button>
-                    <button className='ok'>Ok</button>
+                    <button onClick={()=>{setOk(true)}}>Ok</button>
                 </div>
             </div>
         </div>
     </div>
+            {ok && <DeleteConfirmScreen setCom={setCom}></DeleteConfirmScreen>}
+    {}
   </>
   )
 }
