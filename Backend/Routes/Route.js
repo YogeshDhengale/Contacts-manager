@@ -113,7 +113,7 @@ router.get('/contacts', async (req, res) => {
     try {
         if (req.headers.hasOwnProperty('authorization')) {
             var token = req.headers.authorization.split(' ')[1]
-        } 
+        }
         else {
             return res.status(401).json({
                 message: 'Missing authorization header'
@@ -151,49 +151,52 @@ router.get('/contacts', async (req, res) => {
 
 
 
-router.post('/contacts', upload.single('csv'), async (req, res) => {  // INCOMPLETE
+router.post('/contacts', upload.single('csv'), async (req, res) => {
     try {
-      if (!req.file) {
-        return res.status(400).json({
-          message: 'No CSV file provided'
-        })
-      }
-  
-      // Parse the CSV file and store its data in an array
-      const results = []
-      fs.createReadStream(req.file.path)
-        .pipe(csv())
-        .on('data', (data) => results.push(data))
-        .on('end', async () => {
-          // Insert the data into the user's contacts collection
-          const client = new MongoClient(process.env.uri)
-          const userCollection = client.db('Contacts-Manager').collection('Users')
-          const decodedToken = jwt.verify(req.headers.authorization.split(' ')[1], process.env.JWT_SECRET)
-          const userEmail = decodedToken.email
-          const user = await userCollection.findOne({ email: userEmail })
-  
-          if (!user) {
-            return res.status(404).json({
-              message: 'User not found'
+        if (!req.file) {
+            return res.status(400).json({
+                message: 'No CSV file provided'
             })
-          }
-  
-          const contactsCollection = client.db('Contacts-Manager').collection('user-contacts')
-          const insertedData = await contactsCollection.insertMany(results)
-  
-          res.status(200).json({
-            message: 'Contacts inserted successfully',
-            data: insertedData
-          })
-  
-          await client.close()
-        })
-    } catch (err) {
-      res.status(500).json({
-        message: err.message
-      })
+        }
+
+        const results = []
+
+        fs.createReadStream(req.file.path)
+            .pipe(csv())
+
+            .on('data', (data) => results.push(data))
+
+            .on('end', async () => {
+                const client = new MongoClient(process.env.uri)
+                const userCollection = client.db('Contacts-Manager').collection('Users')
+                
+                const decodedToken = jwt.verify(req.headers.authorization.split(' ')[1], process.env.JWT_SECRET)
+                const userEmail = decodedToken.email
+                const user = await userCollection.findOne({ email: userEmail })
+
+                if (!user) {
+                    return res.status(404).json({
+                        message: 'User not found'
+                    })
+                }
+
+                const contactsCollection = client.db('Contacts-Manager').collection('user-contacts')
+                const insertedData = await contactsCollection.insertMany(results)
+
+                res.status(200).json({
+                    message: 'Contacts inserted successfully',
+                    data: insertedData
+                })
+
+                await client.close()
+            })
     }
-  })
+    catch (err) {
+        res.status(500).json({
+            message: err.message
+        })
+    }
+})
 
 
 
