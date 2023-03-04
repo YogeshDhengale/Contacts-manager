@@ -57,7 +57,7 @@ li {
     width: 100%;
 }
 
-.dashboardTotalContacts{
+.dashboardTotalContacts {
     font-family: 'Titillium Web';
     color: black;
     opacity: 0.9;
@@ -90,22 +90,19 @@ li {
     font-size: 20px;
 }
 
-.logoutbtn{
+.logoutbtn {
     position: absolute;
-left: 5.5%;
-right: 12.5%;
-top: 90.5%;
-bottom: 2.5%;
-border: none;
-outline: none;
-background: none;
-
-font-family: 'Titillium Web';
-/* font-style: normal; */
-font-weight: bolder;
-font-size: 20px;
-line-height: 27px;
-color: #000000;
-
-/* background: #000000; */
+    left: 5.5%;
+    right: 12.5%;
+    top: 90.5%;
+    bottom: 2.5%;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-family: 'Titillium Web';
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
 }
