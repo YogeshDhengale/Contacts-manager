@@ -12,7 +12,7 @@ const Import_Choose_File = ({ onCancel }) => {
                     <div className="icon"><AiOutlineFileAdd></AiOutlineFileAdd></div>
                     <h4 className="import-title">Import File</h4>
                     <div className="input">
-                    <label htmlFor='choose-file' className="line">Drag & Drop a CSV File to Upload</label>
+                    <label htmlFor='choose-file' className="line">Drag & Drop a CSV File To Upload</label>
                         <button className="cancel" onClick={onCancel}>Cancel</button>
                         <input type="file" id='choose-file' onChange={()=>{<ImportComplete></ImportComplete>}}/>
                     </div>
