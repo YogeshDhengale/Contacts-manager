@@ -45,7 +45,7 @@ const Login = () => {
     <>
     <div className="login">
       <div className="Elipse31"><img src={Elipse} alt="ellipse" /></div>
-      <div className="Elipse32"><img src={Elipse2} alt="elipse2" /></div>
+      <div className="Elipse32"><img src={Elipse2} alt="" /></div>
       <div className="logincard">
       </div>
       <div className="groupOfDots">

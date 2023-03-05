@@ -1,9 +1,13 @@
 const Total_Contacts = () => {
 
     return (
-        <div>
-            
-        </div>
+
+        <>
+          <div>
+          
+          </div>
+        </>
+        
     )
 }
 
