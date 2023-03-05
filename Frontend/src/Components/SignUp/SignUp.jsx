@@ -49,8 +49,8 @@ const Signup = () => {
   return (
     <div>
       <div className="login">
-        <div className="Elipse31"><img src={Elipse} alt="EL" /></div>
-        <div className="Elipse32"><img src={Elipse2} alt="EL" /></div>
+        <div className="Elipse31"><img src={Elipse} alt="Elipse31 Err" /></div>
+        <div className="Elipse32"><img src={Elipse2} alt="Elipse32 Err" /></div>
         <div className="logincard">
         </div>
         <div className="groupOfDots">
