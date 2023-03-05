@@ -5,7 +5,7 @@ import { MdImportExport } from 'react-icons/md';
 import Navbar from '../navbar/navbar';
 import SideNavBar from '../sideNavBar/SideNavBar';
 import './Contacts-Page.css';
-import Import_Choose_File from '../Import-Choose-File/Import-Choose-File';
+import ImportChooseFile from '../Import-Choose-File/Import-Choose-File';
 import DeleteScreen from "../Deleted-Screen/Deleted-Screen"
 import { useState } from "react"
 
@@ -74,7 +74,7 @@ const Contacts_page = () => {
           </table>
         </div>
         {showImport && (
-          <Import_Choose_File className="import-ui" onCancel={handleCancelImport} />
+          <ImportChooseFile className="import-ui" onCancel={handleCancelImport} />
         )}
       </div>
       <div>

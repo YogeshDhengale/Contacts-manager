@@ -3,7 +3,7 @@ import '../Import-Choose-File/Import-Choose-File.css'
 import ImportComplete from '../Import-Complete/Import-Complete'
 import {AiOutlineFileAdd}  from 'react-icons/ai'
 
-const Import_Choose_File = ({ onCancel }) => {
+const ImportChooseFile = ({ onCancel }) => {
 
     return (
         <div className="import-panel">
@@ -23,4 +23,4 @@ const Import_Choose_File = ({ onCancel }) => {
     )
 }
 
-export default Import_Choose_File
+export default ImportChooseFile
