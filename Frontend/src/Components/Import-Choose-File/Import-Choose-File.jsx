@@ -1,20 +1,25 @@
-import circle from '../../assets/Ellipse 33.png'
+import React from 'react'
 import '../Import-Choose-File/Import-Choose-File.css'
-import importSign from '../../assets/Vector.png'
+import ImportComplete from '../Import-Complete/Import-Complete'
+import {AiOutlineFileAdd}  from 'react-icons/ai'
 
 const Import_Choose_File = ({ onCancel }) => {
 
     return (
-        <div id='blur-display'>
-            <div className="container">
-                <img src={circle} className='circle' />
-                <img src={importSign} className='importSign'/>
-                <h4 className='heading'>Import File</h4>
-                <label htmlFor="choose-file" id='label'>Drag & Drop a CSV File to Upload</label>
-                <button id='cancel' onClick={onCancel}>Cancel</button>
-                <input type="file" id='choose-file'/>
+        <div className="import-panel">
+            <div className="import-blur-display">
+                <div className="content">
+                    <div className="icon"><AiOutlineFileAdd></AiOutlineFileAdd></div>
+                    <h4 className="import-title">Import File</h4>
+                    <div className="input">
+                    <label htmlFor='choose-file' className="line">Drag & Drop a CSV File to Upload</label>
+                        <button className="cancel" onClick={onCancel}>Cancel</button>
+                        <input type="file" id='choose-file' onChange={()=>{<ImportComplete></ImportComplete>}}/>
+                    </div>
+                </div>
             </div>
         </div>
+        
     )
 }
 

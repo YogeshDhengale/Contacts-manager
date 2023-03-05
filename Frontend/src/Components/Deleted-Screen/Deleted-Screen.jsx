@@ -8,7 +8,6 @@ const DeleteScreen = ({setCom}) => {
 
   return (
     <>
-    
     <div className='delete-panel'>
         <div className="delete-blur-display">
             <div className="content">
