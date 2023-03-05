@@ -67,7 +67,7 @@ const Contacts_page = () => {
                 <th scope="col">Company</th>
                 <th scope="col">Industry</th>
                 <th scope="col">Email</th>
-                <th scope="col">Phone No.</th>
+                <th scope="col">Phone No</th>
                 <th scope="col">Contry</th>
                 <th scope="col">Action</th>
               </tr>
