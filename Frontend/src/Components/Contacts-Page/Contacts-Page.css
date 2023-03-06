@@ -68,10 +68,16 @@
     margin-top: 20px;
 }
 
+table{
+    border-collapse: collapse; 
+    border-radius: 20px;
+}
+
 thead {
     background: #B3DFFF;
-    box-shadow: inset -1px -1px 20px rgba(254, 134, 39, 0.1), inset 1px 1px 20px rgba(254, 134, 39, 0.1);
-    border-radius: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+
 }
 
 
@@ -79,10 +85,12 @@ thead {
 
 
 thead th:nth-child(1) {
+    padding: 0;
     width: 12%;
 }
 
 thead th:nth-child(2) {
+
     width: 12%;
 }
 
@@ -108,6 +116,7 @@ thead th:nth-child(7) {
 
 thead th:nth-child(8) {
     width: 10%;
+    padding-right: 20px;
 }
 
 tbody th:nth-child(8) {
@@ -151,3 +160,5 @@ tbody tr:nth-child(even) {
 button{
     cursor: pointer;
 }
+
+
